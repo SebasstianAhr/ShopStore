@@ -31,10 +31,10 @@
 
 .main-form {
   background-color: #ffffff6e;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 31%;
+  width: 40%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -91,89 +91,141 @@
   width: 100%;
   align-items: center;
   display: flex;
-  justify-content: flex-start;
-  position: fixed;
-  z-index: 1;
-  border-bottom: solid 1px gainsboro;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  background-color: #fff;
 }
 
 .nav-menu {
   width: 100%;
+  max-width: 1300px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6rem;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   flex-wrap: wrap;
 }
 
 .cont-menu {
   display: flex;
-  gap: 6rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   list-style: none;
 }
 
 .acc-menu {
-  font-size: 1.9rem;
-}
-
-.acc-menu a {
-  text-decoration: none;
+  font-size: 1.4rem;
   color: #ffa72d;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.acc-menu a:hover {
+.acc-menu:hover {
   transition: 0.5s;
   color: #009dff;
 }
 
 .imagen-navbar {
-  width: 9rem;
-  height: 6rem;
+  width: 7rem;
+  height: 5rem;
   cursor: pointer;
 }
 
 /*==========HOME=========*/
 
 .imagen-home {
-  background-image: url(../public/imagen-home.jpg);
+  background-image: url(../public/imagen-home.webp);
   width: 100%;
   height: 100vh;
   background-size: cover;
   display: flex;
 }
 
-.content-home {
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+.main-home {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.subtitulo-home {
-  font-size: 3rem;
+.content-home {
   width: 100%;
-  max-width: 60%;
-  color: #0062ff9f;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.subtitulo-home {
+  font-size: 1.5rem;
+  color: #ffa72d;
 }
 
 .titulo-home {
-  margin-top: 2rem;
-  font-size: 3.9rem;
-  width: 100%;
-  max-width: 60%;
-  color: #ffffffec;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 3rem;
+  font-size: 2.3rem;
+  color: #000;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .favorito-home {
-  color: #ffa72d95;
+  color: #ffa72d;
+}
+
+/*===========Que es un pokémon======*/
+
+.main-body-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-info {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #ffa72d;
+  padding: 7rem 0;
+  font-size: 220%;
+}
+
+.titulo-info::after,
+.titulo-info::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #ffa72d;
+  margin-top: 7%;
+}
+
+.titulo-info::before {
+  left: 102%;
+}
+
+.titulo-info::after {
+  right: 102%;
+}
+
+.main-info {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cont-parrafos-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: justify;
 }
