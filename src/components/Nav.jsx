@@ -15,7 +15,6 @@ const Nav = () => {
             <li className="acc-menu">Home</li>
             <li className="acc-menu">¿Que es un pokémon?</li>
             <li className="acc-menu">pokémones</li>
-            <li className="acc-menu">Tus productos</li>
             <li className="acc-menu">Perfil</li>
           </ul>
         </div>
